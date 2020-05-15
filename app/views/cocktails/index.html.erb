@@ -1,0 +1,23 @@
+<div class="parent-header">
+  <div class="header">
+    <img class="card-img-top" src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/ecc3360888d724523a10a43b7e69f624/dd95cd75-03f5-4336-ac71-7eac8ecd676a_rw_1920.gif?h=5d87e736cb91549b230d567fb94877f7" alt="title image cap">
+  </div>
+  <h2>Browse. Create. Inspire. </h2>
+</div>
+
+
+<div class="grid-container">
+  <% @cocktail.each do |cocktail| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+  <% end %>
+</div>
+
+<div class="footer">
+  <h3 id="create-cocktail" class="add-cocktail"><%= link_to 'Creat your own new cocktail!', new_cocktail_path %></h3>
+</div>
+
+<!-- div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://www.thespruceeats.com/thmb/hzJWvJM9Mze-Ok9xgPMF46wMilQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/vodka-martini-recipe-760983-Hero-5bd771cd4cedfd0026121758.jpg" alt="Card image cap">
+            <div class="card-body"> -->
