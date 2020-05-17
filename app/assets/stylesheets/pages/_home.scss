@@ -1,7 +1,11 @@
 // Specific CSS for your home-page
 
 body {
-  background-color: #1A0A0A;
+  background-color: black;
+}
+
+.parent-header {
+   background-color: #1A0A0A;
 }
 
 h1 {
@@ -16,13 +20,19 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
+.show-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
 
 h2 {
-  font-size: 20px;
+  font-size: 26px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   text-align: center;
-  margin-top: -45px;
+  margin-top: -18px;
   margin-bottom: 100px;
 }
 
@@ -56,11 +66,9 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
-  // height: 100vh;
-  // margin-left: 70px;
-  // margin-top: 30px;
-  // width: 100vw;
+  margin-left: 20px;
 }
+
 .grid-item {
   width: 100vw;
   text-align: center;
@@ -89,7 +97,6 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   a {
     text-decoration: none;
@@ -99,12 +106,22 @@ h3 {
 
 .show-header {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .doses {
-  margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: between;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    &:hover {
+        color:grey;
+    }
+  }
 }
 
 .destroy_dose {
@@ -112,8 +129,16 @@ h3 {
 }
 
 .options {
-  margin-left: 200px;
   margin-top: 100px;
+}
+
+.fa-trash {
+  font-size: 10px;
+}
+
+
+.form-container {
+  width: 600px;
 }
 
 
